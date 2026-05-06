@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Deploy Test - Theseus</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="badge">Deploy Test Page</div>
+  <h1>アップロード成功 ✓</h1>
+  <p class="lead">このページが見えてるなら、レンタルサーバーへのファイル転送は正常に完了している。</p>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="label">アクセスURL</div>
+      <div class="value" id="current-url"></div>
+    </div>
+    <div class="info-card">
+      <div class="label">表示日時</div>
+      <div class="value" id="current-time"></div>
+    </div>
+    <div class="info-card">
+      <div class="label">ブラウザ</div>
+      <div class="value" id="user-agent"></div>
+    </div>
+  </div>
+
+  <div class="check-list">
+    <h2>動作確認チェックリスト</h2>
+    <ul>
+      <li>このページが表示されている → HTML転送OK</li>
+      <li>背景にグラデーションがかかっている → CSS読み込みOK</li>
+      <li>下の日時が表示されている → JavaScript動作OK</li>
+      <li>下のボタンを押して画像が出る → 画像ファイルパスOK</li>
+    </ul>
+  </div>
+
+  <button id="show-image-btn">画像を読み込む</button>
+  <div id="image-area"></div>
+
+  <footer>
+    <p>Theseus Consulting Inc. | Deploy Practice Page</p>
+    <p class="small">本番サイトには影響しない /test/ ディレクトリで動作中</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
